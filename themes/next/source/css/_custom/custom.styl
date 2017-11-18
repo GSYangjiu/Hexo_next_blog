@@ -1,1 +1,947 @@
 // Custom styles.
+// 页面整体设置（背景、字体颜色、行间距）
+body {
+  background-image: url("/images/Vincent.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.5;
+}
+// 页面留白更改
+.header-inner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.posts-expand {
+  padding-top: 0px;
+}
+.posts-expand .post-meta {
+  margin: 3px 0px 0px 0px;
+}
+.post-button {
+  margin-top: 0px;
+}
+.main {
+  padding-bottom: 125px;
+}
+// 最顶部加载条
+.headband {
+  height: 1.5px;
+  background: rgba(255, 255, 255, 0);
+  background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+}
+// 顶栏宽度
+.container .header-inner {
+  width: 100%;
+}
+// 渐变菜带，CSS代码copy自https://githubuniverse.com
+.site-meta {
+  margin-left: 0px;
+  text-align: center;
+  //background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+}
+// 站点名背景
+.brand{
+  background: rgba(255, 255, 255, 0);
+}
+// 站点名字体
+.site-title {
+  font-size: 28px;
+  font-family: 'Comic Sans MS', sans-serif;
+  color: #fff;
+}
+// 站点子标题
+.site-subtitle{
+  margin: 0px;
+  font-size: 15px;
+  font-family: 'Comic Sans MS', sans-serif;
+  color: rgb(255, 255, 255);
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255, 118, 0, 0.75);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+}
+// 菜单
+.menu {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+  font-family: 'Comic Sans MS', sans-serif;
+}
+.site-nav {
+  position: relative;
+}
+// 菜单超链接字体大小
+.menu .menu-item a {
+  font-size: 14px;
+  color: rgb(15, 46, 65);
+  border-radius: 4px;
+}
+// 菜单超链接样式
+.menu .menu-item a:hover {
+  border-bottom-color: rgba(255, 118, 0, 0);
+}
+// 移动端左上角菜单按钮
+.site-nav-toggle {
+  top: 20px;
+  left: 10px;
+}
+.btn-bar {
+  background: rgb(255, 255, 255);
+}
+// 移动端菜单
+@media (max-width: 767px) {
+  .menu {
+    text-align: center;
+  }
+  .site-nav {
+    top: initial;
+    background: rgba(255, 255, 255, 0.75);
+    border-top: none;
+    border-bottom: none;
+  }
+}
+// 文章标题字体大小
+.posts-expand .post-title {
+  font-size: 26px;
+}
+// 文章标题颜色
+.posts-expand .post-title-link {
+  color: rgb(255, 255, 255);
+}
+// 文章标题动态效果
+.posts-expand .post-title-link::before {
+  background-color: rgb(255, 118, 0);
+  background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+}
+// 文章元数据（site-meta）字体
+.posts-expand .post-meta {
+  font-size: 11px;
+  color: #ccc;
+}
+// 文章描述description
+.posts-expand .post-meta .post-description {
+  color: rgb(255, 255, 255);
+}
+// 主页文章添加阴影效果
+.post {
+  margin-top: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.4);
+}
+// 阅读更多按钮样式
+.post-button .btn {
+  color: rgb(255, 255, 255);
+  background-color: rgba(134, 187, 232, 0.5);
+  margin: 3px;
+  border-radius: 3px;
+  font-size: 15px;
+  text-decoration: none;
+  border: 1.5px solid rgb(255, 118, 0);
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+}
+.post-button .btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(134, 187, 232, 0.75);
+  margin: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1.5px solid rgb(255, 118, 0);
+  background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+}
+// 去除文章之间的分割线
+.posts-expand .post-eof {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  background: rgba(255, 255, 255, 0);
+}
+// 页面底部横线
+.pagination {
+  border: none;
+  margin: 15px 0px;
+}
+// 页面底部页码
+.pagination .page-number.current {
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.35);
+}
+.pagination .prev, .pagination .next, .pagination .page-number {
+  margin-bottom: 10px;
+  border: none;
+}
+// 页脚
+.footer {
+  background: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: rgba(255, 118, 0, 0.75);
+  padding-top: 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.15);
+}
+// 超链接样式
+a {
+  color: rgb(5, 147, 211);
+  border-bottom-color: rgb(5, 147, 211);
+}
+a:hover {
+  color: rgb(255, 118, 0);
+  border-bottom-color: rgb(255, 118, 0);
+}
+// 引用样式
+blockquote {
+  padding-top: 3px;
+  padding-right: 25px;
+  padding-bottom: 3px;
+  padding-left: 25px;
+  color: rgba(255, 255, 255, 0.85);
+  border-left: 5px solid rgb(255, 118, 0);
+}
+// 分割线样式
+hr {
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  background-color: rgba(255, 118, 0, 0.75);
+  background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75) 4px, transparent 4px, transparent 8px);
+  height: 3px;
+}
+// 表格样式
+table {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(221, 221, 221, 0.9);
+}
+table>tbody>tr:nth-of-type(odd) {
+  background-color: rgba(249, 249, 249, 0.9);
+}
+table>tbody>tr:hover {
+  background-color: rgba(245, 245, 245, 0.9);
+}
+th, td {
+  border-bottom: 3px solid rgba(221, 221, 221, 0.9);
+  border-right: 1px solid rgba(238, 238, 238, 0.9);
+}
+// 文章首行缩进
+.post-body p {
+  text-indent: 2em;
+}
+/*
+下面三个是修上面文章首行缩进的“bug”
+加不加取决于你用Markdown的两种不同列表的方式
+*/
+// “1.2.3.”这样的有序列表
+ol {
+  padding-left: 75px;
+}
+/* “-”这样的无序列表
+ul {
+    padding-left: 75px;
+}
+*/
+// 文章“-”无序列表的样式
+.posts-expand .post-body ul li {
+  list-style: outside;
+  margin-left: 8px;
+}
+// 文章标题样式（左边的蓝线和文字渐变）
+.post-body h2, h3, h4, h5, h6 {
+  border-left: 5px solid rgb(#000000);
+  margin-left: -15px;
+  padding-left: 10px;
+  background-image: linear-gradient(90deg, #f7ecdc 0%, #ffe29e 15%, #efdb53 30%, #ffd234 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+// 文章图片样式
+.posts-expand .post-body img {
+  border-radius: 3px;
+  border: none;
+  padding: 0px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+// 文章``代码块的自定义样式
+code {
+  color: rgba(0, 0, 0, 0.95);
+  background: rgba(255, 255, 255, 0.75);
+  margin: 1px 3px;
+  padding: 1px 3px;
+}
+// 文章```代码块顶部样式
+.highlight figcaption {
+  margin: 0.5em;
+  color: #FFEB3B;
+}
+.highlight figcaption a {
+  color: #FFEB3B;
+}
+// 文章```代码块diff样式
+pre .addition {
+  background: #008000;
+}
+pre .deletion {
+  background: #800000;
+}
+// 文章底部Copyright
+.post-copyright {
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+// 文章底部页面跳转
+.post-nav-item a {
+  position: relative;
+  display: block;
+  line-height: 25px;
+  color: rgba(255, 118, 0, 0.75);
+  font-weight: bold;
+}
+.post-nav-item a:hover {
+  position: relative;
+  display: block;
+  line-height: 25px;
+  color: rgb(255, 118, 0);
+  font-weight: bold;
+}
+// 文章底部的tags
+.posts-expand .post-tags {
+  margin-top: 10px;
+}
+.posts-expand .post-tags a {
+  border-bottom: none;
+}
+// 底部评论
+.comments {
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+}
+// 侧栏
+.sidebar {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+// 移动端侧栏区域之外的透明度
+.sidebar-active #sidebar-dimmer {
+  opacity: 0;
+}
+// 侧栏顶部文字
+.sidebar-nav li {
+  font-size: 15px;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-weight: bold;
+  color: rgb(34, 244, 246);
+}
+.sidebar-nav li:hover {
+  color: rgb(255, 255, 255);
+}
+.sidebar-nav .sidebar-nav-active {
+  color: rgb(34, 244, 246);
+  border-bottom-color: rgb(255, 118, 0);
+}
+.sidebar-nav .sidebar-nav-active:hover {
+  color: rgb(34, 244, 246);
+}
+// 侧栏头像（圆形以及旋转效果）
+.site-author-image {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 100%;
+  transition: transform 1.0s ease-out;
+}
+img:hover {
+  transform: rotateZ(360deg);
+}
+.posts-expand .post-body img:hover {
+  transform: initial;
+}
+// 侧栏站点作者名
+.site-author-name {
+  margin: 5px 0px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 35px;
+}
+// 侧栏站点描述
+.site-description {
+  letter-spacing: 5px;
+  font-size: 15px;
+  color: rgb(255, 118, 0);
+  font-weight: bold;
+}
+// 侧栏站点文章、分类、标签
+.site-state {
+  margin-right: 7px;
+}
+.site-state-item {
+  padding: 0px 15px;
+  border-left: 1px solid rgb(255, 118, 0);
+}
+// 侧栏RSS按钮样式
+.feed-link {
+  margin-right: 5px;
+}
+.feed-link a {
+  color: rgb(255, 255, 255);
+  border: 1px solid #999 !important;
+  border-radius: 15px;
+}
+.feed-link a:hover {
+  background: rgba(255, 118, 0, 0.75);
+}
+.feed-link a i {
+  color: rgb(255, 255, 255);
+}
+// 侧栏友链标题
+.links-of-blogroll-title {
+  color: rgb(#F0F0F0);
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+// 侧栏超链接样式（友链的样式）
+.sidebar a {
+  color: #ccc;
+  border-bottom: none;
+}
+.sidebar a:hover {
+  color: rgb(255, 255, 255);
+}
+// 侧栏目录链接样式
+.post-toc ol a {
+  color: rgb(34, 244, 246);
+  border-bottom: 1px solid #999;
+}
+.post-toc ol a:hover {
+  color: rgb(255, 118, 0);
+  border-bottom-color: rgb(255, 118, 0);
+}
+// 侧栏目录链接样式之当前目录
+.post-toc .nav .active > a {
+  color: rgb(255, 118, 0);
+  border-bottom-color: rgb(255, 118, 0);
+}
+.post-toc .nav .active > a:hover {
+  color: rgb(255, 118, 0);
+  border-bottom-color: rgb(255, 118, 0);
+}
+/* 修侧栏目录bug，如果主题配置文件_config.yml的toc是wrap: true */
+.post-toc ol {
+  padding: 0px 10px 5px 10px;
+}
+/* 侧栏目录默认全展开，已注释
+.post-toc .nav .nav-child {
+    display: block;
+}
+*/
+// 右下角侧栏按钮样式
+.sidebar-toggle {
+  right: 10px;
+  bottom: 43px;
+  background: rgba(255, 118, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+}
+// 右下角返回顶部按钮样式
+.back-to-top {
+  right: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  background: rgba(255, 118, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+}
+.back-to-top.back-to-top-on {
+  bottom: 10px;
+}
+// 分类页面
+.category-all-page {
+  margin: 0px 50px;
+}
+// 分类页面数字颜色
+.category-all-page .category-list-count {
+  color: rgb(255, 255, 255);
+}
+// 修archives页面移动端菜单下拉的bug
+.posts-collapse {
+  z-index: initial;
+}
+// 时间轴样式
+.posts-collapse {
+  margin: 50px 0px;
+}
+@media (max-width: 767px) {
+  .posts-collapse {
+    margin: 50px 20px;
+  }
+}
+// 时间轴左边线条
+.posts-collapse::after {
+  margin-left: -2px;
+  background: rgb(255, 118, 0);
+  background-image: linear-gradient(180deg,#f79533 0,#f37055 15%,#ef4e7b 30%,#a166ab 44%,#5073b8 58%,#1098ad 72%,#07b39b 86%,#6dba82 100%);
+}
+// 时间轴左边线条圆点颜色
+.posts-collapse .collection-title::before {
+  background: rgb(255, 255, 255);
+}
+// archives页面时间轴左边线条第一个圆点颜色
+.page-archive .posts-collapse .archive-move-on {
+  top: 10px;
+  opacity: 1;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+// 时间轴文章标题左边圆点颜色
+.posts-collapse .post-header::before {
+  background: rgb(255, 255, 255);
+}
+.posts-collapse .post-header:hover::before {
+  background: rgb(255, 118, 0);
+}
+// 时间轴文章标题
+.posts-collapse .post-title a {
+  color: rgb(5, 147, 211);
+}
+.posts-collapse .post-title a:hover {
+  color: rgb(255, 118, 0);
+}
+// 时间轴文章标题底部虚线
+.posts-collapse .post-header:hover {
+  border-bottom-color: rgb(255, 118, 0);
+}
+// 本地搜索框
+.local-search-popup .search-icon, .local-search-popup .popup-btn-close {
+  color: rgb(255, 118, 0);
+  margin-top: 7px;
+}
+.local-search-popup .local-search-input-wrapper input {
+  padding: 9px 0px;
+  height: 21px;
+  background: rgb(255, 255, 255);
+}
+.local-search-popup .popup-btn-close {
+  border-left: none;
+}
+// 图标FontAwesome样式
+.fa {
+  display: inline;
+}
+// 选中文字部分的样式
+::selection {
+  background: rgb(135, 218, 255);
+  color: rgb(0, 0, 0);
+}
+*::-moz-selection {
+  background: rgb(135, 218, 255);
+  color: rgb(0, 0, 0);
+}
+/* 设置滚动条的样式 */
+/* 参考https://segmentfault.com/a/1190000003708894 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  background: #ccc;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 118, 0);
+}
+// 音乐播放器aplayer
+.aplayer {
+  font-family: "Lato", "PingFang SC", "Microsoft YaHei", sans-serif !important;
+  border-radius: 3px !important;
+}
+.aplayer-withlrc.aplayer .aplayer-info {
+  background: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.9);
+}
+// 音乐播放器aplayer歌单
+.aplayer .aplayer-list ol {
+  background: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.9);
+}
+// 视频播放器dplayer
+.dplayer {
+  border-radius: 3px !important;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+}
+.dplayer.dplayer-fulled {
+  border-radius: initial !important;
+}
+/*升级主题到5.1.3后已失效
+**只有在主题配置文件_config.yml
+**关闭motion才能解决
+// 修视频播放器dplayer网页全屏的bug
+.post.post-type-normal {
+    transform: inherit !important;
+}
+*/
+// 评分rating
+.post-widgets {
+  padding-top: 0px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.wp_rating {
+  margin-right: 0px;
+  padding-top: 10px;
+}
+// 自定义emoji样式
+img#github-emoji {
+  margin: 0px;
+  padding: 0px;
+  display: inline !important;
+  vertical-align: text-bottom;
+  border: none;
+  cursor: text;
+  box-shadow: none;
+}
+// 文章超链接样式（为emoji特设）
+.post-body a {
+  color: rgb(5, 147, 211);
+  border-bottom: none;
+  text-decoration: underline;
+}
+.post-body a:hover {
+  color: rgb(255, 118, 0);
+  border-bottom: none;
+  text-decoration: underline;
+}
+// 标签云页面超链接样式（为emoji特设）
+.tag-cloud a {
+  color: rgb(5, 147, 211);
+  border-bottom: 1px solid rgb(5, 147, 211);
+  text-decoration: none;
+}
+.tag-cloud a:hover {
+  color: rgb(255, 118, 0);
+  border-bottom: 1px solid rgb(255, 118, 0);
+  text-decoration: none;
+}
+// 自定义文章标题元数据中categories的样式，要改post.swig
+a.categories {
+  color: rgb(5, 147, 211);
+  border-bottom: none;
+  text-decoration: underline;
+}
+a.categories:hover {
+  color: rgb(255, 118, 0);
+  border-bottom: none;
+  text-decoration: underline;
+}
+// 自定义的侧栏时间样式
+#days {
+  display: block;
+  color: rgb(#ff7600);
+  font-size: 13px;
+  margin-top: 15px;
+}
+// 自定义的TopX页面样式
+#top {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+// 自定义的页脚微信订阅号样式
+.weixin-box {
+  position: absolute;
+  bottom: 43px;
+  left: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+}
+.weixin-menu {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  //background: url(https://微信的logo.svg);
+  background-size: 24px 24px;
+}
+.weixin-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0px;
+  width: 0px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+//  background: url(https://二维码.svg);
+  background-size: 150px 150px;
+  transition: all 0.35s ease-in-out;
+}
+.weixin-menu:hover .weixin-hover {
+  bottom: 24px;
+  left: 24px;
+  height: 150px;
+  width: 150px;
+//  background: url(https://二维码.svg);
+  background-size: 150px 150px;
+}
+// 自定义页脚跳动的心样式
+@keyframes heartAnimate {
+  0%,100%{transform:scale(1);}
+  10%,30%{transform:scale(0.9);}
+  20%,40%,60%,80%{transform:scale(1.1);}
+  50%,70%{transform:scale(1.1);}
+}
+#heart {
+  animation: heartAnimate 1.33s ease-in-out infinite;
+}
+.with-love {
+  color: rgb(255, 113, 168);
+}
+// 自定义特别的样式
+h2.love {
+  border-left: none;
+  color: rgb(255, 113, 168);
+  -webkit-text-fill-color: unset;
+}
+// 自定义文字背景色块
+span#inline-red {
+  padding: 3px;
+  margin: 2px;
+  font-size: 90%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #FF0000;
+}
+span#inline-yellow {
+  padding: 3px;
+  margin: 2px;
+  font-size: 90%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #FFFF00;
+}
+span#inline-blue {
+  padding: 3px;
+  margin: 2px;
+  font-size: 90%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #0000FF;
+}
+span#inline-green {
+  padding: 3px;
+  margin: 2px;
+  font-size: 90%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #008000;
+}
+span#inline-cyan {
+  padding: 3px;
+  margin: 2px;
+  font-size: 90%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #00FFFF;
+}
+span#inline-orange {
+  padding: 3px;
+  margin: 2px;
+  font-size: 90%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #FFA500;
+}
+span#inline-purple {
+  padding: 3px;
+  margin: 2px;
+  font-size: 90%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #800080;
+}
+span#inline-gray {
+  padding: 3px;
+  margin: 2px;
+  font-size: 90%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #808080;
+}
+span#inline-white {
+  padding: 3px;
+  margin: 2px;
+  font-size: 90%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+}
+span#inline-brown {
+  padding: 3px;
+  margin: 2px;
+  font-size: 90%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #A52A2A;
+}
+span#inline-pink {
+  padding: 3px;
+  margin: 2px;
+  font-size: 90%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #FFC0CB;
+}
+// 自定义文字引用边框
+p#border-left-red {
+  color: #FF0000;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-left-width: 5px;
+  border-radius: 3px;
+  border-left-color: #FF0000;
+  text-indent: 0em;
+}
+p#border-right-red {
+  color: #FF0000;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right-width: 5px;
+  border-radius: 3px;
+  border-right-color: #FF0000;
+  text-indent: 0em;
+}
+p#border-top-red {
+  color: #FF0000;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-top-width: 5px;
+  border-radius: 3px;
+  border-top-color: #FF0000;
+  text-indent: 0em;
+}
+p#border-bottom-red {
+  color: #FF0000;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-bottom-width: 5px;
+  border-radius: 3px;
+  border-bottom-color: #FF0000;
+  text-indent: 0em;
+}
+// 自定义的引用样式
+blockquote.question {
+  color: rgba(0, 0, 0, 0.95);
+  padding-left: 25px;
+  border-left: 5px solid rgb(5, 154, 37);
+  background: rgba(255, 255, 255, 0.75);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+// 自定义的下载框
+a#download {
+  padding: 3px 10px;
+  margin: 3px;
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  font-weight: bold;
+  text-decoration: none;
+}
+a#download:hover {
+  background: #ffffff;
+  color: #000000;
+}
+// note标签
+.post-body .note {
+  color: rgba(0, 0, 0, 0.95);
+}
+// tabs标签
+.post-body .tabs ul.nav-tabs {
+  margin-bottom: 0px;
+}
+.post-body .tabs ul.nav-tabs li.tab {
+  margin: 0px;
+}
+.post-body .tabs ul.nav-tabs li.tab a {
+  text-decoration: none;
+}
+.post-body .tabs ul.nav-tabs li.tab a:hover {
+  background-color: #fff;
+}
+.post-body .tabs ul.nav-tabs li.tab.active {
+  border-top: 3px solid #ff7600;
+}
+.post-body .tabs ul.nav-tabs li.tab.active a {
+  color: rgba(0, 0, 0, 0.9);
+}
+.post-body .tabs .tab-content {
+  background-color: rgba(255, 255, 255, 0);
+}
+.post-body .tabs .tab-content .tab-pane {
+  border: 1px solid rgb(255, 255, 255);
+}
+// 自定义的数字块
+span#inline-toc {
+  display: inline-block;
+  border-radius: 80% 100% 90% 20%;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.05em 0.4em;
+  margin: 2px 5px 2px 0px;
+  text-indent: 0em;
+}
+// 默认按钮bug
+.btn {
+  cursor: pointer;
+}

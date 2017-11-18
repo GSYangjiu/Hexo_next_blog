@@ -18,11 +18,12 @@ override: false
 
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
+#图标
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
+  small: /images/favicon-ico
+  #medium: /images/favicon-32x32-next.png
+  #apple_touch_icon: /images/apple-touch-icon-next.png
+  #safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -37,7 +38,7 @@ rss:
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  #since: 2015
+  since: 2017
 
   # Icon between year and copyright info.
   icon: user
@@ -84,14 +85,20 @@ index_with_subtitle: false
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
-  home: / || home
+  #home: / || home
   #about: /about/ || user
   #tags: /tags/ || tags
   #categories: /categories/ || th
-  archives: /archives/ || archive
+  #archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
+  home: /
+  archives: /archives
+  categories: /categories
+  tags: /tags
+  top: /top
+  about: /about
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -103,10 +110,10 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
+scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-scheme: Gemini
+#scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -137,8 +144,12 @@ social_icons:
 
 # Blog rolls
 links_icon: link
-links_title: Links
-links_layout: block
+links_title: 另一扇大门
+links_layout: inline
+links:
+  😆 网易云音乐 😆: https://music.163.com/#/user/home?id=86590096
+  Github: https://github.com/GSYangjiu
+  个人门户: http://www.yangmiemie.info
 #links_layout: inline
 #links:
   #Title: http://example.com/
@@ -166,8 +177,8 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right (only for Pisces | Gemini).
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Sidebar Display, available value (only for Muse | Mist):
   #  - post    expand on posts automatically. Default.
@@ -181,15 +192,19 @@ sidebar:
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
+  offset_float: 12
 
   # Back to top in sidebar (only for Pisces | Gemini).
+  # 侧栏回到顶部按钮，不是页面上那个自带的！
   b2t: false
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  #显示阅读百分比
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
-  onmobile: false
+  # 移动端显示侧栏
+  onmobile: true
 
 
 # ---------------------------------------------------------------
@@ -197,9 +212,11 @@ sidebar:
 # ---------------------------------------------------------------
 
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
+# 点击[Read More]，自动滚动到<!-- more -->标记处
+scroll_to_more: false
 
 # Automatically saving scroll position on each post/page in cookies.
+# 用cookies保存浏览的位置信息
 save_scroll: false
 
 # Automatically excerpt description in homepage as preamble text.
@@ -212,6 +229,7 @@ auto_excerpt:
   length: 150
 
 # Post meta display settings
+# 文章顶部显示的文章元数据
 post_meta:
   item_text: true
   created_at: true
@@ -220,12 +238,15 @@ post_meta:
 
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
+# 显示统计字数和建议阅读时长
+# 注意：这个要安装插件，先进入站点文件夹根目录
+# 然后：npm install hexo-wordcount --save
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
+  wordcount: true
+  min2read: true
   totalcount: false
-  separated_meta: true
+  separated_meta: false
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -254,7 +275,7 @@ post_copyright:
 mobile_layout_economy: false
 
 # Android Chrome header panel color ($black-deep).
-android_chrome_color: "#222"
+android_chrome_color: "#fff"
 
 # Custom Logo.
 # !!Only available for Default Scheme currently.
@@ -269,7 +290,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night blue
 
 
 # ---------------------------------------------------------------
@@ -285,10 +306,10 @@ highlight_theme: normal
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
-  host:
+  host: https://fonts.proxy.ustclug.org
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -318,13 +339,13 @@ font:
   # Fallback to `global` font settings.
   logo:
     external: true
-    family:
+    family: Lato
     size:
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: "Source Code Pro"
     size:
 
 
@@ -387,7 +408,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+#livere_uid: MTAyMC8zMTg3Mi84NDM2
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
@@ -514,6 +535,7 @@ vkontakte_api:
 
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
+#评分
 rating:
   enable: false
   id:     #<app_id>
@@ -541,17 +563,20 @@ firestore:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
+  site_uv_header: <i class="fa fa-user-circle-o"></i>
   site_uv_footer:
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
+  site_pv_header:
+  site_pv_footer: <i class="fa fa-eye"></i>
   # custom pv span for one page only
-  page_pv: true
+  # 页面浏览量，不建议开启，建议用上面的leancloud_visitors
+  # 首先leancloud更稳定，其次leancloud便于管理
+  # 最后，可以利用leancloud的api建立TopX页面
+  page_pv: false
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 
@@ -596,7 +621,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -667,7 +692,7 @@ motion:
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
@@ -684,10 +709,33 @@ pace: false
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+pace_theme: pace-theme-flash
+
+# 主题的标签样式，有note、lable、tabs三种，说明请查看本文6.4节
+# Note tag (bs-callout).
+#note:
+#  style: flat
+#  icons: true
+#  border_radius: 3
+#  light_bg_offset: 0
+
+# Label tag.
+#label: true
+#
+## Tabs tag.
+#tabs:
+#  enable: true
+#  transition:
+#    tabs: true
+#    labels: true
+#  border_radius: 0
+
+# Motion
+# 动态渐入显示效果
+use_motion: true
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
 three_waves: false

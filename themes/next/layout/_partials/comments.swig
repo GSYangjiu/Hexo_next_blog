@@ -30,6 +30,10 @@
           <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
         </noscript>
       </div>
+     {% elseif theme.laibili_uid %}
+        <div id="lv-container" data-id="city" data-uid="MTAyMC8zMTg3Mi84NDM2">
+
+        </div>
     </div>
 
   {% elseif theme.hypercomments_id %}
