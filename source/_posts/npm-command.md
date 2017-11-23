@@ -1,5 +1,8 @@
 ---
 title: npm常用命令
+date: 2017/11/09 20:46:25
+tags: [深圳,NPM]
+categories: 前端
 ---
 
 **查看当前镜像地址：**
@@ -21,7 +24,3 @@ npm config set prefix "XXX\nodejs\node_global"
 npm config set cache "XXX\nodejs\node_cache"
 
 <!-- more -->
-
-
-
-

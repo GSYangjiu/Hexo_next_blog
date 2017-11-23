@@ -1,5 +1,8 @@
 ---
 title: A NEW BEGINNING
+date: 2017/8/09 20:46:25
+tags: [深圳,生活]
+categories: 随笔
 ---
 
 <h3>新的开始</h3>

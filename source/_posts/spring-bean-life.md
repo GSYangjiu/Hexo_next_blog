@@ -1,5 +1,8 @@
 ---
 title: Spring Bean生命周期
+date: 2017/9/15 20:46:25
+tags: [深圳,Spring]
+categories: Web
 ---
 
 <a href="http://www.cnblogs.com/zrtqsk/p/3735273.html" target="_blank">转自http://www.cnblogs.com/zrtqsk/p/3735273.html，THKS</a>

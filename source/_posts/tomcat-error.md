@@ -1,5 +1,8 @@
 ---
-title: <IDEA启动tomcat报错 Unable to ping server at localhost:1099
+title: IDEA启动tomcat报错 Unable to ping server at localhost:1099
+date: 2017/10/09 20:46:25
+tags: [深圳,tomcat]
+categories: Web
 ---
 
  <h3>正文</h3>

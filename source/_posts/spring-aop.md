@@ -1,5 +1,8 @@
 ---
 title: Spring AOP初探——通知
+date: 2017/9/09 20:46:25
+tags: [深圳,Spring]
+categories: Web
 ---
 
 "Aspect-Oriented Programming（面向切面编程），它其实是 OOP（Object-Oriented Programing，面向对象编程）思想的补充和完善"
