@@ -143,7 +143,7 @@ public class JPush {
 
 ```
 
-一开始没有自信去看源码，分平台推送构建了两个PushPayload，分别推送ios和Android，后来在网上查阅资料发现可以通过 **.newBuilder.addPlatformNotification()** 的方法构造对应不同平台的Notification。
+一开始没有仔细去看源码，分平台推送构建了两个PushPayload，分别推送ios和Android，后来在网上查阅资料发现可以通过 **.newBuilder.addPlatformNotification()** 的方法构造对应不同平台的Notification。
 
 还有就是要注意一下springMVC怎么注入 **static** 变量和dao，其他的就没有什么好说的了。
 
