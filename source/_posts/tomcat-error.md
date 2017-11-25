@@ -11,7 +11,7 @@ categories: Web
 
  Application Server was not connected before run configuration stop, reason: Unable to ping server at localhost:1099
 
- <img src="http://www.yangmiemie.info/wp-content/uploads/2017/11/tomcat-300x112.png" alt="" width="300" height="112" class="alignnone size-medium wp-image-81" />
+ <img src="http://oyo2a85eo.bkt.clouddn.com//post/tomcat-error/tomcat_error.png" class="alignnone size-medium wp-image-81" />
  <hr />
 
  <!-- more -->
@@ -41,6 +41,6 @@ categories: Web
 
  tomcat bin文件夹中catalina.bat 文件中设置了jvm参数 set JAVA_OPTS= -Xmx1024M -Xms512M -XX:MaxPermSize=256m。把参数去掉就Ok了
 
- <img src="http://www.yangmiemie.info/wp-content/uploads/2017/11/host-300x75.png" alt="" width="300" height="75" class="alignnone size-medium wp-image-83" />
+ <img src="http://oyo2a85eo.bkt.clouddn.com//post/tomcat-error/host.png" class="alignnone size-medium wp-image-83" />
 
  问题解决
