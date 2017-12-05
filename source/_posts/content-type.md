@@ -2,7 +2,7 @@
 title: Content-Type和@RequestBody
 date: 2017/10/15 21:36:25
 tags: [深圳,SpringMVC]
-categories: web
+categories: Web
 ---
 
 最近公司开发app平台，前后端分离，我这边主要使用springMVC写一些接口供前端调用，然后改写一下以前微信平台的servise方法，前端调接口的的时候出现了一个问题，请求400，后台拿不到值，看了下代码和文档，发现是前端请求头改成了 **application/json**
