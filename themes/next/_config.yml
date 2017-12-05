@@ -93,12 +93,12 @@ menu:
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
-  home: /
-  archives: /archives
-  categories: /categories
-  tags: /tags
-  top: /top
-  about: /about
+  home: / || home
+  archives: /archives || archive
+  categories: /categories || th
+  tags: /tags || tags
+  top: /top || coffee
+  about: /about || user
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -737,7 +737,7 @@ pace_theme: pace-theme-flash
 use_motion: true
 
 # Canvas-nest
-canvas_nest: true
+canvas_nest: false
 
 # three_waves
 three_waves: false
