@@ -641,3 +641,7 @@ public class Pages<T> {
 	}
 }
 ```
+### 结尾
+#### _参考文章_ 	
+CDNS：[mybatis常用分页插件，快速分页处理](http://blog.csdn.net/u014001866/article/details/52806930)
+简书：[Mybatis插件原理 作者：曹金桂](https://www.jianshu.com/p/7c7b8c2c985d)
