@@ -4,28 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/themes/next/source/css/_custom/custom.styl" line="344" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b6a7d9c-1cb6-4b11-86b0-e0e4b0ef9f47" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Hello-2017.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/a-new-beingning.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/content-type.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/npm-command.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/spring-aop.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/spring-bean-life.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/springmvc-@value.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/tomcat-error.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/next/layout/_third-party/comments/laibili.swig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/_posts/hello-world.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/_config.yml" afterPath="$PROJECT_DIR$/themes/next/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/layout/_custom/sidebar.swig" afterPath="$PROJECT_DIR$/themes/next/layout/_custom/sidebar.swig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/layout/_macro/sidebar.swig" afterPath="$PROJECT_DIR$/themes/next/layout/_macro/sidebar.swig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/layout/_partials/comments.swig" afterPath="$PROJECT_DIR$/themes/next/layout/_partials/comments.swig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/layout/_third-party/comments/index.swig" afterPath="$PROJECT_DIR$/themes/next/layout/_third-party/comments/index.swig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next/source/css/_custom/custom.styl" afterPath="$PROJECT_DIR$/themes/next/source/css/_custom/custom.styl" />
-    </list>
+    <list default="true" id="0b6a7d9c-1cb6-4b11-86b0-e0e4b0ef9f47" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -188,7 +167,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="966" />
     <option name="width" value="961" />
     <option name="height" value="1057" />
@@ -281,15 +260,15 @@
       <workItem from="1510844274659" duration="55000" />
       <workItem from="1510897825744" duration="6119000" />
       <workItem from="1510985698205" duration="301000" />
-      <workItem from="1511001615069" duration="6577000" />
+      <workItem from="1511001615069" duration="6643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13052000" />
+    <option name="totallyTimeSpent" value="13118000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="966" y="0" width="961" height="1057" extended-state="1" />
+    <frame x="966" y="0" width="961" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33439153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
