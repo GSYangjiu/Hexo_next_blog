@@ -2,19 +2,19 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 # Site
-title: Yang|Blog
+title: Yang`s Blog
 subtitle: Fuck the world
 description: Yang`s Blog
 author: Yang
 language: zh-Hans
 timezone:
 # URL
-url: https://GSYangjiu.github.io/
+url: https://www.yangmiemie.info/
 root: /
 # 文章的永久链接结构，请务必写文章之前就想好
 # 详细参数请查看：https://hexo.io/docs/permalinks.html
 # 当然最好不要参考我的，我的太不利于SEO了，除非……
-permalink: :category/:year/:month/:day/:title.html
+permalink: :category/:title.html
 permalink_defaults:
 # Directory
 source_dir: source

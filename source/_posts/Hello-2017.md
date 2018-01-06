@@ -1,13 +1,13 @@
 ---
 title: "Hello World, Hello Blog"
+date: 2017/7/09 20:46:25
+tags: [深圳,生活]
+categories: 随笔
 ---
 
 ---
 &nbsp;
 *“Yeah It's on. ”*
-&nbsp;
-
----
 
 ## 前言
 

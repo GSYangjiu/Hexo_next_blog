@@ -1,5 +1,8 @@
 ---
 title: SpringMVC @value注入static变量
+date: 2017/10/20 20:46:25
+tags: [深圳,SpringMVC]
+categories: Web
 ---
 
 昨天写代码时用@value注入一个值，调试的时候发现值为空，应该是没有注入成功，注入方式使用@value和往常一样，仔细和往常代码比对发现这次注入的变量多了static修饰符。遂想到springMVC @ value注入**静态变量**和**普通变量**的方式是不是有所不同，查了一下发现注入方式确实存在区别，所以随手记下来。
@@ -52,6 +55,3 @@ title: SpringMVC @value注入static变量
 
 #### PS:
 使用@value标签给变量注入值的时候class上一定要加上@Component
-
-
-
