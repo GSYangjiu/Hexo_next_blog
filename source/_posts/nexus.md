@@ -1,6 +1,6 @@
 ---
-title: "搭建Nexus Maven私服"
-date: 2017/7/09 20:46:25
+title: 搭建Nexus Maven私服
+date: 2018/1/30 20:46:25
 tags: [Linux,Maven]
 categories: 技术
 ---
