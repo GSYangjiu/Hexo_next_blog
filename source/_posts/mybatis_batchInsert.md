@@ -5,11 +5,13 @@ tags: [深圳,Mybatis]
 categories: Web
 ---
 
+<center>_插插插..._</center>
+<img src="http://oyo2a85eo.bkt.clouddn.com/banner/shenzhen.jpg">
+<!-- more -->
+
 ### 批量插入
 在for循环中插入数据，当循环次数比较大时，效率很低。使用批量插入效率就会高很多。<br>
 什么是 **批量插入**：在每次循环中插入是插入一条数据，我们可以把要插入的数据用一个集合保存起来，比如List（建议用Linklist，LinkList增删效率比ArrayList高），等到遍历完毕，再做插入操作，当数据量非常庞大时，可以分批插入。
-
-<!-- more -->
 
 ### 插入的三种方式
 #### 普通insert

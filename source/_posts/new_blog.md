@@ -5,6 +5,10 @@ tags: [深圳,Blog]
 categories: 随笔
 ---
 
+<center>_不折腾不罢休..._</center>
+<img src="http://oyo2a85eo.bkt.clouddn.com//post/newblog/yangblog_4%20.png">
+<!-- more -->
+
 ## 关于Blog的血泪史
 
 ### YangBlog1.0
@@ -18,7 +22,7 @@ Blog的图找不到了，引用下大佬的界面吧。
 ### YangBlog2.0
 
 后来又觉得功能有些单一，正好公司有一台闲置的服务器，4核8G，当时两眼发光，想都不想就上了wordpress的贼船，
-<!-- more -->
+
 简称YangBlog2.0，发现wordpress不经过繁琐的优化，体验并不太好，毕竟PHP是最好的语言，<br>
 <img src="http://oyo2a85eo.bkt.clouddn.com//post/newblog/huaji.jpg" height="200" width="200">
 

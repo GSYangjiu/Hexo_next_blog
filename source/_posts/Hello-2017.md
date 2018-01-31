@@ -5,6 +5,10 @@ tags: [深圳,生活]
 categories: 随笔
 ---
 
+<center>_想来生活无非是痛苦和美丽..._</center>
+<img src="http://oyo2a85eo.bkt.clouddn.com/banner/coke.jpg">
+<!-- more -->
+
 ---
 &nbsp;
 *“Yeah It's on. ”*
@@ -19,8 +23,6 @@ Yang 的 Blog 就这么开通了。
 
 在知乎上看到各种大牛搭建的自己的博客平台，有界面粗犷但是技术文写的跟葵花宝典一样的，也有各种简洁性冷淡的，看着心痒，于是乎自己花了一整天的时间折腾出了自己的Bolg平台，买域名，看教程，
 一步一步的搞出了这个用GitHub Pages做虚拟主机搭建的静态web Blog，主题是Clone的，但以后积累的技术是自己的。加油！
-
-<!-- more -->
 
 &nbsp;
 

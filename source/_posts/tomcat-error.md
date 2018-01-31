@@ -5,6 +5,10 @@ tags: [深圳,tomcat]
 categories: Web
 ---
 
+<center>_Tom猫..._</center>
+<img src="http://oyo2a85eo.bkt.clouddn.com/banner/tom.jpeg">
+<!-- more -->
+
  <h3>正文</h3>
 
  在IDAE下启动tomcat时报错：
@@ -13,8 +17,6 @@ categories: Web
 
  <img src="http://oyo2a85eo.bkt.clouddn.com//post/tomcat-error/tomcat_error.png" class="alignnone size-medium wp-image-81" />
  <hr />
-
- <!-- more -->
 
  <h3>解决方法</h3>
 

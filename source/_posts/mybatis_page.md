@@ -5,6 +5,10 @@ tags: [深圳,Mybatis,Spring]
 categories: Web
 ---
 
+<center>_Mybatis分页插件详解..._</center>
+<img src="http://oyo2a85eo.bkt.clouddn.com//banner/%E6%B7%B1%E5%9C%B3%E6%B9%BE.jpg">
+<!-- more -->
+
 ### 总体流程
 最近研究了一下公司后台系统的分页实现机制，发现收获还是蛮多的，主要思想是使用Spring Aop 和Mybatis的插件拦截器，在特定sql执行之前进行拦截，然后判断数据库类型，加上相应分页语法，然后执行（以下以Mysql数据库作为示例）
 
@@ -13,7 +17,6 @@ categories: Web
 ### mybatis-config.xml
 首先是Mybatis的配置文件，mybatis-config.xml,应该是网上找的，都有详细注解，看看就好，平时这个配置基本没有改动，主要是在底部配置了 *PaginationInterceptor* 插件
 
-<!-- more -->
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">

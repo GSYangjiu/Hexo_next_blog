@@ -5,6 +5,10 @@ tags: [深圳,Mybatis]
 categories: Web
 ---
 
+<center>_还是插插插..._</center>
+<img src="http://oyo2a85eo.bkt.clouddn.com/banner/tony.png">
+<!-- more -->
+
 ### mybatis做insert操作的时候返回插入的那条数据的id
 
 #### 对于支持具有自增长方式的数据库（如mysql）<br>
@@ -24,7 +28,6 @@ categories: Web
         )
     </insert>
 ```
-<!-- more -->
 注意，返回值不是主键，返回的是被操作的记录条数。要获取主键：
 ```
 placeDAO.insert(newPlace);

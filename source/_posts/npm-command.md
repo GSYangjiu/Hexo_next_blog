@@ -5,6 +5,10 @@ tags: [深圳,NPM]
 categories: 前端
 ---
 
+<center>_不会前端的厨子不是好司机..._</center>
+<img src="http://oyo2a85eo.bkt.clouddn.com/banner/cherry.jpg">
+<!-- more -->
+
 **查看当前镜像地址：**
 
 npm get registry
@@ -22,5 +26,3 @@ npm get cache
 
 npm config set prefix "XXX\nodejs\node_global"
 npm config set cache "XXX\nodejs\node_cache"
-
-<!-- more -->

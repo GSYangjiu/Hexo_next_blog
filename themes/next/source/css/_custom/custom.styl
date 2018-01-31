@@ -6,7 +6,6 @@ body {
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: cover;
-  color: rgba(255, 255, 255, 0.95);
   line-height: 1.5;
 }
 // 页面留白更改
@@ -25,6 +24,9 @@ body {
 }
 .main {
   padding-bottom: 125px;
+  padding-top: 1px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,0.35);
 }
 // 最顶部加载条
 .headband {
@@ -114,7 +116,7 @@ body {
 }
 // 文章标题颜色
 .posts-expand .post-title-link {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 // 文章标题动态效果
 .posts-expand .post-title-link::before {
@@ -124,7 +126,7 @@ body {
 // 文章元数据（site-meta）字体
 .posts-expand .post-meta {
   font-size: 11px;
-  color: #ccc;
+  //color: #ccc;
 }
 // 文章描述description
 .posts-expand .post-meta .post-description {
@@ -133,14 +135,14 @@ body {
 // 主页文章添加阴影效果
 .post {
   margin-top: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 45px 36px 36px;
   border-radius: 3px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
-  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 50px 0 rgba(0,0,0,.5);
+  background-color: #fff;
+  margin-bottom: 50px;
+  border-radius: 3px;
 }
+
 // 阅读更多按钮样式
 .post-button .btn {
   color: rgb(255, 255, 255);
@@ -149,7 +151,7 @@ body {
   border-radius: 3px;
   font-size: 15px;
   text-decoration: none;
-  border: 1.5px solid rgb(255, 118, 0);
+  border: 1.5px solid rgba(0,0,0,0.35)
   box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
 }
 .post-button .btn:hover {
@@ -158,8 +160,8 @@ body {
   margin: 3px;
   border-radius: 3px;
   text-decoration: none;
-  border: 1.5px solid rgb(255, 118, 0);
-  background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+  border: 1.5px solid rgba(0,0,0,0.35)
+  //background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
 }
 // 去除文章之间的分割线
 .posts-expand .post-eof {
@@ -176,14 +178,18 @@ body {
 }
 // 页面底部页码
 .pagination .page-number.current {
-  border-radius: 100%;
+  //border-radius: 100%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255, 0.35);
 }
+
 .pagination .prev, .pagination .next, .pagination .page-number {
   margin-bottom: 10px;
   border: none;
+  color: #fff;
+  border-bottom-color: rgb(5, 147, 211);
 }
+
 // 页脚
 .footer {
   background: rgba(255, 255, 255, 0.75);
@@ -243,9 +249,9 @@ th, td {
   border-right: 1px solid rgba(238, 238, 238, 0.9);
 }
 // 文章首行缩进
-.post-body p {
-  text-indent: 2em;
-}
+//.post-body p {
+//  text-indent: 2em;
+//}
 /*
 下面三个是修上面文章首行缩进的“bug”
 加不加取决于你用Markdown的两种不同列表的方式
@@ -269,7 +275,8 @@ ul {
   border-left: 5px solid rgb(#000000);
   margin-left: -15px;
   padding-left: 10px;
-  background-image: linear-gradient(90deg, #f7ecdc 0%, #ffe29e 15%, #efdb53 30%, #ffd234 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+  //background-image: linear-gradient(90deg, #f7ecdc 0%, #ffe29e 15%, #efdb53 30%, #ffd234 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+  background-color: #000;
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -529,19 +536,46 @@ img:hover {
   background: rgb(255, 255, 255);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
+
+//归档样式
+.posts-collapse .post {
+  margin: 0px 0px 2px 2px;
+  padding: 5px 25px;
+  background-color: rgb(40, 61, 95);
+}
+
+//归档标题
+.page-archive .archive-page-counter {
+  color: #fff;
+}
+
+//归档年份
+.archive-year {
+  color: #fff;
+}
+
+//归档post时间
+.posts-collapse .post-meta {
+  color: #fff;
+}
+
+.posts-collapse .collection-title {
+  margin: 30px 0px 5px 0px
+}
+
 // 时间轴文章标题左边圆点颜色
 .posts-collapse .post-header::before {
   background: rgb(255, 255, 255);
 }
 .posts-collapse .post-header:hover::before {
-  background: rgb(255, 118, 0);
+  background: rgba(50,28,86,0.62);
 }
 // 时间轴文章标题
 .posts-collapse .post-title a {
-  color: rgb(5, 147, 211);
+  color: #FBF37F;
 }
 .posts-collapse .post-title a:hover {
-  color: rgb(255, 118, 0);
+  color: #a166ab
 }
 // 时间轴文章标题底部虚线
 .posts-collapse .post-header:hover {
@@ -954,12 +988,12 @@ span#inline-toc {
 
 //页脚对齐
 .copyright {
-  margin-right: 14px;
+  margin-right: 53px;
 }
 
-//.busuanzi-count{
-//margin-left: 8px;
-//}
+.busuanzi-count{
+  margin-left: 9px;
+}
 
 .site-brand-wrapper{
   height:150px;

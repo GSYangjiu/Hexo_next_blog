@@ -5,9 +5,11 @@ tags: [深圳,SpringMVC]
 categories: Web
 ---
 
-昨天写代码时用@value注入一个值，调试的时候发现值为空，应该是没有注入成功，注入方式使用@value和往常一样，仔细和往常代码比对发现这次注入的变量多了static修饰符。遂想到springMVC @ value注入**静态变量**和**普通变量**的方式是不是有所不同，查了一下发现注入方式确实存在区别，所以随手记下来。
+<center>_不如早还乡..._</center>
+<img src="http://oyo2a85eo.bkt.clouddn.com/banner/Sunset.jpg">
 
 <!-- more -->
+昨天写代码时用@value注入一个值，调试的时候发现值为空，应该是没有注入成功，注入方式使用@value和往常一样，仔细和往常代码比对发现这次注入的变量多了static修饰符。遂想到springMVC @ value注入**静态变量**和**普通变量**的方式是不是有所不同，查了一下发现注入方式确实存在区别，所以随手记下来。
 
 ### @value注入普通变量
 

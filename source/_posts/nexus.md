@@ -4,10 +4,12 @@ date: 2018/1/30 20:46:25
 tags: [Linux,Maven]
 categories: 技术
 ---
+<center>_做web开发的对Maven肯定不会陌生..._</center>
+<img src="http://oyo2a85eo.bkt.clouddn.com//post/nexus/maven.png">
+<!-- more -->
 
 ### 前言
-做web开发的对Maven肯定不会陌生，强大的Maven为项目构建、项目管理和第三方Jar包管理提供了支撑。在一个项目中Maven默认提供的中央仓库是在远程网络服务Appache提供的，搭建一个新项目的时候经常下jar包下的捉急，太慢了，其实在maven的settings.xml配置文件中配置第三方镜像就ok了。但是这么简单这么可以满(zhuang)足(bi)！于是利用闲暇之余，捣鼓了一下怎么搭建nexus私服。至于什么是nexus私服，我们先看看下面这张图。
-<img src="http://oyo2a85eo.bkt.clouddn.com//post/nexus/maven.png">
+做web开发的对Maven肯定不会陌生，强大的Maven为项目构建、项目管理和第三方Jar包管理提供了支撑。在一个项目中Maven默认提供的中央仓库是在远程网络服务Appache提供的，搭建一个新项目的时候经常下jar包下的捉急，太慢了，其实在maven的settings.xml配置文件中配置第三方镜像就ok了。但是这么简单这么可以满(zhuang)足(bi)！于是利用闲暇之余，捣鼓了一下怎么搭建nexus私服。至于什么是nexus私服，我们可以先看看文章顶部那张图。
 
 私服就是相当于在Maven本地仓库和中心服务器之间搭建了一个代理服务器，你可将第三方jar包下载至Nexus服务器，在为本地仓库提供服务。而且在我们项目中，经常有一些自己提供的jar包，我们可以上传到私服，再建立服务依赖关系，这样代码就不存在泄露问题，而且管理也非常方便。
 
@@ -16,7 +18,9 @@ Ps：开始我以为Nexus只能提供maven管理，搭建完后才发现Nexus功
 <!-- more -->
 
 ### Nexus搭建流程
-<h4>话不多说，是时候展示正真的技术。<h4>
+
+*话不多说，是时候展示正真的技术。*
+
 #### 安装Nexus
 私服首先你肯定要有一个服务器，linux也好，windows也行。下文一linux为例演示   
 1、下载Nexus安装文件：http://www.sonatype.org/nexus/go

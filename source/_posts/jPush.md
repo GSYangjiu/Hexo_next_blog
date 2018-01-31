@@ -5,6 +5,10 @@ tags: [深圳,Utils]
 categories: 技术
 ---
 
+<center>_想来生活无非是痛苦和美丽..._</center>
+<img src="http://oyo2a85eo.bkt.clouddn.com/banner/coke.jpg">
+<!-- more -->
+
 ## 极光推送
 最近App开发采用React Native + java前后端分离的方式，前端调用后台接口，后台返回数据。在某些应用情景，后台需要推送消息给用户客户端，基于敏捷开发，我们选择了集成极光推送的模式来推送给用户各种消息。
 
@@ -17,8 +21,6 @@ categories: 技术
 2. 使用官方提供的第三方SDK
 
   第二种方式需要通过在pom.xml文件中添加下面代码，添加Maven依赖。
-
-<!-- more -->
 
 ```
   <dependency>
