@@ -106,3 +106,10 @@ deploy:
   type: git
   repo: https://github.com/GSYangjiu/GSYangjiu.github.io.git
   branch: master
+
+# hexo-tag-cloud
+# tag_cloud:
+#     textFont: Trebuchet MS, Helvetica
+#     textColour: \#333
+#     textHeight: 25
+#     outlineColour: \#E2E1D1
