@@ -25,8 +25,8 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "hexo-tag-aplayer": "^2.0.5",
-    "hexo-tag-dplayer": "^0.2.0",
-    "hexo-wordcount": "^3.0.2",
-    "hexo-tag-cloud": "2.0.*"
+    "hexo-tag-cloud": "2.0.*",
+    "hexo-tag-dplayer": "^0.2.1",
+    "hexo-wordcount": "^3.0.2"
   }
 }
