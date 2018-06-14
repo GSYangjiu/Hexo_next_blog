@@ -147,22 +147,23 @@ body {
 // 阅读更多按钮样式
 .post-button .btn {
   color: rgb(255, 255, 255);
-  background-color: rgba(134, 187, 232, 0.5);
+  //background-color: rgba(134, 187, 232, 0.5);
   margin: 3px;
   border-radius: 3px;
   font-size: 15px;
   text-decoration: none;
   border: 1.5px solid rgba(0,0,0,0.35)
   box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  background: rgba(0,0,0,0.5);
 }
 .post-button .btn:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgba(134, 187, 232, 0.75);
+  //background-color: rgba(134, 187, 232, 0.75);
   margin: 3px;
   border-radius: 3px;
   text-decoration: none;
   border: 1.5px solid rgba(0,0,0,0.35)
   //background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+  background: rgb(0,0,0);
 }
 // 去除文章之间的分割线
 .posts-expand .post-eof {
@@ -220,7 +221,7 @@ blockquote {
   padding-right: 25px;
   padding-bottom: 3px;
   padding-left: 25px;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgb(0, 14, 32);
   border-left: 5px solid rgb(255, 118, 0);
 }
 // 分割线样式
@@ -284,10 +285,15 @@ ul {
 }
 // 文章图片样式
 .posts-expand .post-body img {
-  border-radius: 3px;
+  border-radius: 1px;
   border: none;
   padding: 0px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+  transition: all 0.2s linear;
+  &:hover {
+        filter: contrast(130%);
+      }
 }
 // 文章``代码块的自定义样式
 code {
@@ -410,7 +416,6 @@ img:hover {
   font-size: 15px;
   color: #ffffff;
   font-weight: bold;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 // 侧栏站点文章、分类、标签
 .site-state {
@@ -684,7 +689,7 @@ img#github-emoji {
   text-decoration: underline;
 }
 .post-body a:hover {
-  color: rgb(255, 118, 0);
+  //color: rgb(255, 118, 0);
   border-bottom: none;
   text-decoration: underline;
 }
@@ -1024,4 +1029,10 @@ span#inline-toc {
 // 自定义的文章摘要图片样式
 img.img-topic {
     width: 100%;
+}
+
+//来必力
+#lv-container {
+    background-color: #fff;
+    line-height: 0;
 }
