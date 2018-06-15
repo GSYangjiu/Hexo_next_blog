@@ -9,13 +9,23 @@ author:                Yang
 language:              zh-Hans
 timezone:
 # URL
-url:                   https://www.yangmiemie.info/
+url:                   http://www.yangmiemie.info/
 root:                  /
 # 文章的永久链接结构，请务必写文章之前就想好
 # 详细参数请查看：https://hexo.io/docs/permalinks.html
 # 当然最好不要参考我的，我的太不利于SEO了，除非……
 permalink:             :category/:title.html
 permalink_defaults:
+# 自动生成sitemap
+sitemap:
+    path:              sitemap.xml
+baidusitemap:
+    path:              baidusitemap.xml
+baidu_url_submit:
+  count:               100 # 提交最新的一个链接
+  host:                www.yangmiemie.info # 在百度站长平台中注册的域名
+  token:               PnKlTVwmxhZ0oWh4 # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path:                baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
 # Directory
 source_dir:            source
 public_dir:            public
@@ -103,9 +113,10 @@ theme:                 next
 # Deployment
 ## Docs:               https://hexo.io/docs/deployment.html
 deploy:
-  type:                git
-  repo:                https://github.com/GSYangjiu/GSYangjiu.github.io.git
-  branch:              master
+  - type:              git
+    repo:                "https://github.com/GSYangjiu/GSYangjiu.github.io.git"
+    branch:              master
+  - type:              baidu_url_submitter
 
 # hexo-tag-cloud
 # tag_cloud:
