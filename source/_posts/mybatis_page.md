@@ -1,12 +1,12 @@
 ---
 title: Mybatis+Spring 插件分页
 date: 2018/01/05 11:46:25
-tags: [深圳,Mybatis,Spring]
-categories: Web
+tags: [深圳,Mybatis,Spring,后端]
+categories: document
+photo: http://oyo2a85eo.bkt.clouddn.com//banner/%E6%B7%B1%E5%9C%B3%E6%B9%BE.jpg
 ---
 
 <center>_Mybatis分页插件详解..._</center>
-<img src="http://oyo2a85eo.bkt.clouddn.com//banner/%E6%B7%B1%E5%9C%B3%E6%B9%BE.jpg">
 <!-- more -->
 
 ### 总体流程
@@ -68,11 +68,11 @@ categories: Web
 
 ```
 ### 分页拦截器
-分页拦截的功能主要由以下几个类实现    
-（1）AbstractInterceptor 拦截器基础类    
-（2）PaginationInterceptor 我们要使用的分页插件类，继承上面基础类    
-（3）SQLHelper 主要是用来提前执行count语句，还有就是获取整个完整的分页语句    
-（4）Dialect，MysqlDialect,主要用来数据库是否支持limit语句，然后封装完整limit语句  
+分页拦截的功能主要由以下几个类实现
+（1）AbstractInterceptor 拦截器基础类
+（2）PaginationInterceptor 我们要使用的分页插件类，继承上面基础类
+（3）SQLHelper 主要是用来提前执行count语句，还有就是获取整个完整的分页语句
+（4）Dialect，MysqlDialect,主要用来数据库是否支持limit语句，然后封装完整limit语句
 
 #### AbstractInterceptor
 ```
@@ -228,15 +228,15 @@ public class PaginationInterceptor extends AbstractInterceptor {
 ```
 在顶部使用了 *@Intercepts* 注解定义了需要拦截的sql语句，
 > MyBatis 允许你在已映射语句执行过程中的某一点进行拦截调用。默认情况下，MyBatis 允许使用插件来拦截的方法调用包括：
-Executor (update, query, flushStatements, commit, rollback, getTransaction, close, isClosed)    
-ParameterHandler (getParameterObject, setParameters)    
-ResultSetHandler (handleResultSets, handleOutputParameters)    
-StatementHandler (prepare, parameterize, batch, update, query)    
-总体概括为：    
-拦截执行器的方法    
-拦截参数的处理    
-拦截结果集的处理    
-拦截Sql语法构建的处理  
+Executor (update, query, flushStatements, commit, rollback, getTransaction, close, isClosed)
+ParameterHandler (getParameterObject, setParameters)
+ResultSetHandler (handleResultSets, handleOutputParameters)
+StatementHandler (prepare, parameterize, batch, update, query)
+总体概括为：
+拦截执行器的方法
+拦截参数的处理
+拦截结果集的处理
+拦截Sql语法构建的处理
 
 <div align=center>
 ![Mybatis四大接口](http://oyo2a85eo.bkt.clouddn.com//post/mybatis_page/Mybatis%E5%9B%9B%E5%A4%A7%E6%8E%A5%E5%8F%A3.jpeg)
@@ -244,9 +244,9 @@ StatementHandler (prepare, parameterize, batch, update, query)
 
 >上图Mybatis框架的整个执行过程。Mybatis插件能够对则四大对象进行拦截，可以包含到了Mybatis一次会议的所有操作。可见Mybatis的的插件很强大。
 
->Executor是 Mybatis的内部执行器，它负责调用StatementHandler操作数据库，并把结果集通过 ResultSetHandler进行自动映射，另外，他还处理了二级缓存的操作。从这里可以看出，我们也是可以通过插件来实现自定义的二级缓存的。   
-StatementHandler是Mybatis直接和数据库执行sql脚本的对象。另外它也实现了Mybatis的一级缓存。这里，我们可以使用插件来实现对一级缓存的操作(禁用等等)。    
-ParameterHandler是Mybatis实现Sql入参设置的对象。插件可以改变我们Sql的参数默认设置。    
+>Executor是 Mybatis的内部执行器，它负责调用StatementHandler操作数据库，并把结果集通过 ResultSetHandler进行自动映射，另外，他还处理了二级缓存的操作。从这里可以看出，我们也是可以通过插件来实现自定义的二级缓存的。
+StatementHandler是Mybatis直接和数据库执行sql脚本的对象。另外它也实现了Mybatis的一级缓存。这里，我们可以使用插件来实现对一级缓存的操作(禁用等等)。
+ParameterHandler是Mybatis实现Sql入参设置的对象。插件可以改变我们Sql的参数默认设置。
 ResultSetHandler是Mybatis把ResultSet集合映射成POJO的接口对象。我们可以定义插件对Mybatis的结果集自动映射进行修改。
 
 <div align=center>
@@ -645,6 +645,6 @@ public class Pages<T> {
 }
 ```
 ### 结尾
-#### _参考文章_ 	
+#### _参考文章_
 CDNS：[mybatis常用分页插件，快速分页处理](http://blog.csdn.net/u014001866/article/details/52806930)
 简书：[Mybatis插件原理 作者：曹金桂](https://www.jianshu.com/p/7c7b8c2c985d)

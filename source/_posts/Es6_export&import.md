@@ -1,8 +1,8 @@
 ---
 title: JavaScript ES6中export及export default的区别
 date: 2018/6/13 15:02:00
-tags: [武汉,前端]
-categories: 技术
+tags: [武汉,ES6,前端]
+categories: document
 photo: http://oyo2a85eo.bkt.clouddn.com/%E4%B8%AD%E5%8D%97%E8%B4%A2%E7%BB%8F_%E6%99%9A%E9%9C%9E
 ---
 
@@ -11,16 +11,16 @@ photo: http://oyo2a85eo.bkt.clouddn.com/%E4%B8%AD%E5%8D%97%E8%B4%A2%E7%BB%8F_%E6
 
 ## ES6的模块化的基本规则或特点
 
-_1、每一个模块只加载一次， 每一个JS只执行一次， 如果下次再去加载同目录下同文件，直接从内存中读取。 一个模块就是一个单例，或者说就是一个对象；  
-2、每一个模块内声明的变量都是局部变量， 不会污染全局作用域；  
-3、模块内部的变量或者函数可以通过export导出；  
+_1、每一个模块只加载一次， 每一个JS只执行一次， 如果下次再去加载同目录下同文件，直接从内存中读取。 一个模块就是一个单例，或者说就是一个对象；
+2、每一个模块内声明的变量都是局部变量， 不会污染全局作用域；
+3、模块内部的变量或者函数可以通过export导出；
 4、一个模块可以导入别的模块_
 
 ## export、import和export default
 
 export、import这两个很好理解，从字面意思就可以知道一个导出，一个导入。
 
-export用于对外输出本模块（一个文件可以理解为一个模块）常量、函数、文件、模块；  
+export用于对外输出本模块（一个文件可以理解为一个模块）常量、函数、文件、模块；
 import用于在一个模块中加载另一个含有export接口的模块，通过import+(常量 | 函数 | 文件 | 模块)名的方式，将其导入。
 
 export default也是导出区别在于export default导出相当于为模块指定默认输出，export default和import时都不需要加上大括号，通过import import的就是export default的内容，因此一个文件中export可以有多个，但是export default只能有一个
@@ -109,5 +109,5 @@ export default也是导出区别在于export default导出相当于为模块指�
 ```
 
 ## 参考
-https://www.cnblogs.com/diligenceday/p/5503777.html  
+https://www.cnblogs.com/diligenceday/p/5503777.html
 https://www.cnblogs.com/xiaotanke/p/7448383.html

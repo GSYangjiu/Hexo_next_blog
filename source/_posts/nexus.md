@@ -1,11 +1,11 @@
 ---
 title: 搭建Nexus Maven私服
 date: 2018/1/30 20:46:25
-tags: [Linux,Maven]
-categories: 技术
+tags: [Linux,Maven,后端]
+categories: document
+photo: http://oyo2a85eo.bkt.clouddn.com//post/nexus/maven.png
 ---
 <center>_做web开发的对Maven肯定不会陌生..._</center>
-<img src="http://oyo2a85eo.bkt.clouddn.com//post/nexus/maven.png">
 <!-- more -->
 
 ### 前言
@@ -22,10 +22,10 @@ Ps：开始我以为Nexus只能提供maven管理，搭建完后才发现Nexus功
 *话不多说，是时候展示正真的技术。*
 
 #### 安装Nexus
-私服首先你肯定要有一个服务器，linux也好，windows也行。下文一linux为例演示   
+私服首先你肯定要有一个服务器，linux也好，windows也行。下文一linux为例演示
 1、下载Nexus安装文件：http://www.sonatype.org/nexus/go
-2、Ftp上传至linux服务器指定目录    
-3、解压就可以运行，不需要安装   
+2、Ftp上传至linux服务器指定目录
+3、解压就可以运行，不需要安装
 4、cd到bin目录，输入命令：*./nexus start*
 
 <img src="http://oyo2a85eo.bkt.clouddn.com//post/nexus/nexus_installation.png">

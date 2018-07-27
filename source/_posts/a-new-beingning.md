@@ -2,11 +2,11 @@
 title: A NEW BEGINNING
 date: 2017/8/09 20:46:25
 tags: [深圳,生活]
-categories: 随笔
+categories: post
+photo: http://oyo2a85eo.bkt.clouddn.com/banner/ClockworkOrange.jpg
 ---
 
 <center>_想来想去都是忏悔和委屈..._</center>
-<img src="http://oyo2a85eo.bkt.clouddn.com/banner/ClockworkOrange.jpg"/>
 <!-- more -->
 
 <h3>新的开始</h3>

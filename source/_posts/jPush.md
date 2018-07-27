@@ -1,12 +1,12 @@
 ---
 title: 极光推送-ios/Android平台 Notification构建
 date: 2017/11/23 15:10:00
-tags: [深圳,Utils]
-categories: 技术
+tags: [深圳,Utils,后端]
+categories: document
+photo: http://oyo2a85eo.bkt.clouddn.com/banner/coke.jpg
 ---
 
 <center>_想来生活无非是痛苦和美丽..._</center>
-<img src="http://oyo2a85eo.bkt.clouddn.com/banner/coke.jpg">
 <!-- more -->
 
 ## 极光推送

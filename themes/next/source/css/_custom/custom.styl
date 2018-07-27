@@ -16,9 +16,7 @@ body {
 .posts-expand {
   padding-top: 0px;
 }
-.posts-expand .post-meta {
-  margin: 3px 0px 5px 0px;
-}
+
 .post-button {
   margin-top: 0px;
 }
@@ -120,13 +118,14 @@ body {
   color: rgb(0, 0, 0);
 }
 // 文章标题动态效果
-.posts-expand .post-title-link::before {
-  background-color: rgb(255, 118, 0);
-  background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
-}
+//.posts-expand .post-title-link::before {
+//  background-color: rgb(255, 118, 0);
+//  background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+//}
 // 文章元数据（site-meta）字体
 .posts-expand .post-meta {
   font-size: 11px;
+  margin: 3px 0px 10px 0px;
   //color: #ccc;
 }
 // 文章描述description
@@ -136,7 +135,7 @@ body {
 // 主页文章添加阴影效果
 .post {
   margin-top: 50px;
-  padding: 45px 36px 36px;
+  padding: 20px 36px 36px;
   border-radius: 3px;
   box-shadow: 0 0 50px 0 rgba(0,0,0,.5);
   background-color: #fff;
@@ -217,12 +216,14 @@ a:hover {
 }
 // 引用样式
 blockquote {
-  padding-top: 3px;
+  //padding-top: 3px;
   padding-right: 25px;
-  padding-bottom: 3px;
+  //padding-bottom: 3px;
   padding-left: 25px;
   color: rgb(0, 14, 32);
-  border-left: 5px solid rgb(255, 118, 0);
+  border-left: 5px solid #034596ad;
+  font-style: italic;
+  background-color: #bbbbbb26;
 }
 // 分割线样式
 hr {
@@ -358,7 +359,7 @@ pre .deletion {
   margin-bottom: 20px;
   margin-left: 20px;
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgb(255, 255, 255);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
 }
 // 侧栏
@@ -378,17 +379,17 @@ pre .deletion {
   font-size: 15px;
   font-family: 'Comic Sans MS', sans-serif;
   font-weight: bold;
-  color: rgb(34, 244, 246);
+  color: #FFFFFF;
 }
 .sidebar-nav li:hover {
-  color: rgb(255, 255, 255);
+
 }
 .sidebar-nav .sidebar-nav-active {
-  color: rgb(34, 244, 246);
+  color: #FFFFFF;
   border-bottom-color: rgb(255, 118, 0);
 }
 .sidebar-nav .sidebar-nav-active:hover {
-  color: rgb(34, 244, 246);
+
 }
 // 侧栏头像（圆形以及旋转效果）
 .site-author-image {
@@ -458,7 +459,8 @@ img:hover {
 }
 // 侧栏目录链接样式
 .post-toc ol a {
-  color: rgb(34, 244, 246);
+  color: #FFFFFF;
+  font-style: italic;
   border-bottom: 1px solid #999;
 }
 .post-toc ol a:hover {
@@ -718,7 +720,7 @@ a.categories:hover {
 // 自定义的侧栏时间样式
 #days {
   display: block;
-  color: rgb(#ff7600);
+  color: rgb(#ffffff);
   font-size: 13px;
   margin-top: 15px;
 }
@@ -1032,7 +1034,7 @@ img.img-topic {
 }
 
 //来必力
-#lv-container {
-    background-color: #fff;
-    line-height: 0;
-}
+//#lv-container {
+//    background-color: #fff;
+//    line-height: 0;
+//}

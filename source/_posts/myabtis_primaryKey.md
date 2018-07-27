@@ -1,12 +1,12 @@
 ---
 title: Mybatis insert 返回主键
 date: 2017/12/05 16:46:25
-tags: [深圳,Mybatis]
-categories: Web
+tags: [深圳,Mybatis,后端]
+categories: document
+photo: http://oyo2a85eo.bkt.clouddn.com/banner/tony.png
 ---
 
 <center>_还是插插插..._</center>
-<img src="http://oyo2a85eo.bkt.clouddn.com/banner/tony.png">
 <!-- more -->
 
 ### mybatis做insert操作的时候返回插入的那条数据的id

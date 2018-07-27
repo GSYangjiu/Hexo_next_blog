@@ -1,126 +1,96 @@
 # Hexo Configuration
-## Docs:               https://hexo.io/docs/configuration.html
-## Source:             https://github.com/hexojs/hexo/
+## Docs:             https://hexo.io/docs/configuration.html
+## Source:           https://github.com/hexojs/hexo/
+
 # Site
-title:                 Yang`s Blog
-subtitle:              “We are all in the gutter, but some of us are looking at the stars.”
-description:           “Fuck the world”
-author:                Yang
-language:              zh-Hans
+title:               Yang`s Blog
+subtitle:            “We are all in the gutter, but some of us are looking at the stars.”
+description:         “Fuck the world”
+keywords:
+author:              Yang
+language:            zh-CH
 timezone:
+
 # URL
-url:                   http://www.yangmiemie.info/
-root:                  /
-# 文章的永久链接结构，请务必写文章之前就想好
-# 详细参数请查看：https://hexo.io/docs/permalinks.html
-# 当然最好不要参考我的，我的太不利于SEO了，除非……
-permalink:             :category/:title.html
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url:                 http://www.yangmiemie.info/
+root:                /
+permalink:           :category/:title.html
 permalink_defaults:
-# 自动生成sitemap
-sitemap:
-    path:              sitemap.xml
-baidusitemap:
-    path:              baidusitemap.xml
-baidu_url_submit:
-  count:               100 # 提交最新的一个链接
-  host:                www.yangmiemie.info # 在百度站长平台中注册的域名
-  token:               PnKlTVwmxhZ0oWh4 # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
-  path:                baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
+
 # Directory
-source_dir:            source
-public_dir:            public
-tag_dir:               tags
-archive_dir:           archives
-category_dir:          categories
-code_dir:              downloads/code
-i18n_dir:              :lang
+source_dir:          source
+public_dir:          public
+tag_dir:             tags
+archive_dir:         archives
+category_dir:        categories
+code_dir:            downloads/code
+i18n_dir:            :lang
 skip_render:
+
 # Writing
-new_post_name:         :title.md # File name of new posts
-default_layout:        post
-titlecase:             false # Transform title into titlecase
-external_link:         true # Open external links in new tab
-filename_case:         0
-render_drafts:         false
-post_asset_folder:     false
-relative_link:         false
-future:                true
+new_post_name:       :title.md # File name of new posts
+default_layout:      post
+titlecase:           false # Transform title into titlecase
+external_link:       true # Open external links in new tab
+filename_case:       0
+render_drafts:       false
+post_asset_folder:   false
+relative_link:       false
+future:              true
 highlight:
-  enable:              true
-  line_number:         true
-# 代码自动高亮
-  auto_detect:         true
+  enable:            true
+  line_number:       true
+  auto_detect:       false
   tab_replace:
-# 另：也可以通过Hexo内建标签基于Github Gist插入代码块
-# 显示效果见：https://reuixiy.github.io/uncategorized/2010/01/01/test.html
-# 关于代码高亮的更多知识，可以查看本文6.4.2节
+
 # Home page setting
-# path:                Root path for your blogs index page. (default = '')
-# per_page:            Posts displayed per page. (0 = disable pagination)
-# order_by:            Posts order. (Order by date descending by default)
+# path:              Root path for your blogs index page. (default = '')
+# per_page:          Posts displayed per page. (0 = disable pagination)
+# order_by:          Posts order. (Order by date descending by default)
 index_generator:
-  path:                ''
-  per_page:            10
-  order_by:            -date
+  path:              ''
+  per_page:          10
+  order_by:          -date
+
 # Category & Tag
-default_category:      uncategorized
-# 分类和标签的路径设置成英文
-# 见：https://github.com/hexojs/hexo/issues/1162
+default_category:    uncategorized
 category_map:
 tag_map:
+
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format:           YYYY-MM-DD
-time_format:           HH:mm:ss
+date_format:         YYYY-MM-DD
+time_format:         HH:mm:ss
+
 # Pagination
 ## Set per_page to 0 to disable pagination
-# 这个我有点懵，上面不是有啊……
-per_page:              10
-pagination_dir:        page
+per_page:            10
+pagination_dir:      page
+
 ## 修改归档页面、某一分类页面、某一标签页面的显示篇数
 ## 参考：http://theme-next.iissnan.com/faqs.html#setting-page-size
 archive_generator:
-  per_page:            0
-  yearly:              false
-  monthly:             false
-  daily:               false
+  per_page: 0
+  yearly: false
+  monthly: false
+  daily: false
 
 category_generator:
-  per_page:            0
+  per_page: 0
 
 tag_generator:
-  per_page:            0
+  per_page: 0
 # Extensions
-## Plugins:            https://hexo.io/plugins/
-# RSS，要先进入站点文件夹根目录安装插件
-# npm install hexo-generator-feed --save即可
-# 无需更多配置
-# 参数说明查看README：https://github.com/hexojs/hexo-generator-feed
-feed:
-  type:                atom
-  path:                atom.xml
-# 文章数，0为全部
-  limit:               0
-  hub:
-# 是否包含文章内容
-  content:             true
-## Themes:             https://hexo.io/themes/
-# 主题配置
-theme:                 next
+## Plugins:          https://hexo.io/plugins/
+## Themes:           https://hexo.io/themes/
+theme:               next
 
 # Deployment
-## Docs:               https://hexo.io/docs/deployment.html
+## Docs:             https://hexo.io/docs/deployment.html
 deploy:
-  - type:              git
-    repo:                "https://github.com/GSYangjiu/GSYangjiu.github.io.git"
-    branch:              master
-  - type:              baidu_url_submitter
-
-# hexo-tag-cloud
-# tag_cloud:
-#     textFont:        Trebuchet MS, Helvetica
-#     textColour:      \#333
-#     textHeight:      25
-#     outlineColour:   \#E2E1D1
+    type:            git
+    repo:            https://github.com/GSYangjiu/GSYangjiu.github.io.git
+    branch:          master

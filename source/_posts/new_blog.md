@@ -1,12 +1,12 @@
 ---
 title: New Blog
 date: 2017/11/24 19:35:00
-tags: [深圳,Blog]
-categories: 随笔
+tags: [深圳,Blog,生活]
+categories: post
+photo: http://oyo2a85eo.bkt.clouddn.com//post/newblog/yangblog_4%20.png
 ---
 
 <center>_不折腾不罢休..._</center>
-<img src="http://oyo2a85eo.bkt.clouddn.com//post/newblog/yangblog_4%20.png">
 <!-- more -->
 
 ## 关于Blog的血泪史
