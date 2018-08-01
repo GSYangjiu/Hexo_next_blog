@@ -131,6 +131,15 @@ menu_settings:
   icons: true
   badges: false
 
+menu_icons:
+  enable: true
+  # Icon Mapping.
+  home: home
+  about: user
+  categories: th
+  tags: tags
+  archives: archive
+  commonweal: heartbeat
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
@@ -412,7 +421,7 @@ font:
 
   # Global font settings used for all elements in <body>.
   global:
-    external: true
+    external: false
     family: Lato
     size:
 
@@ -432,7 +441,7 @@ font:
   # Font settings for Logo.
   # Fallback to `global` font settings.
   logo:
-    external: true
+    external: false
     family: Lato
     size:
 
@@ -854,8 +863,7 @@ pace: true
 #pace-theme-mac-osx
 #pace-theme-minimal
 # For example
-# pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-flash
+pace_theme: pace-theme-center-simple
 
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
@@ -989,3 +997,6 @@ vendors:
 css: css
 js: js
 images: images
+
+# Theme version
+version: 6.3.0
