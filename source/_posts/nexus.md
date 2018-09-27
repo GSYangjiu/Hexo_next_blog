@@ -38,7 +38,7 @@ Ps：开始我以为Nexus只能提供maven管理，搭建完后才发现Nexus功
 
 #### 配置Maven
 直接贴出我Maven的settings.xml，上面<mirrors>是一些镜像地址，避免国内下载jar包太慢，在下面<profiles>中配置了Nexus仓库，注意对应关系，仓库地址Url可以在上一步，Nexus可视化后台中查看仓库详情Cpoy。
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -149,7 +149,7 @@ Ps：开始我以为Nexus只能提供maven管理，搭建完后才发现Nexus功
 
 #### 修改项目pom.xml
 项目的pom文件中要加入下面这段代码。id需要和settings.xml中<servers>中的仓库id一致，但是不明白为什么又要再配置一次Url地址
-```
+```xml
 <distributionManagement>
 		<repository>
 			<id>releases</id>

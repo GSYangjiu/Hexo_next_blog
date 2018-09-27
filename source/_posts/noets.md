@@ -24,7 +24,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com//post/notes
 
 1、排除null，undefined
 
-```
+```js
     for(var i=0; i<a.length; i++){
         if(!a[i]) continue;//跳过null、undefined
         //循环体
@@ -33,7 +33,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com//post/notes
 
 2、跳过undefined和不存在的元素
 
-```
+```js
     for(var i=0; i<a.length; i++){
         if(a[i] === undefined) continue;//跳过undefined和不存在的元素
         //循环体
@@ -42,7 +42,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com//post/notes
 
 3、跳过不存在的元素，仍处理undefined
 
-```
+```js
     for(var i=0; i<a.length; i++){
         if(!(i in a)) continue;//跳过undefined和不存在的元素
         //循环体
@@ -57,7 +57,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com//post/notes
 
 *** Oracle恢复删除表
 TableName:表名
-```
+```sql
     select * from recyclebin WHERE ORIGINAL_NAME LIKE 'TableName%';
     flashback table TableName to before drop;
 ```

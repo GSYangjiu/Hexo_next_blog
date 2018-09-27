@@ -10,9 +10,9 @@ photo: http://oyo2a85eo.bkt.clouddn.com//post/notes
 <!-- more -->
 
 ### 情景
-**Spring DI** 注入的时候可以很轻松的注入普通变量，也可以通过嵌套注入对象，但嵌套的对象的属性还是普通变量。加假如我们要注入一个 *Date* 类型就会比较麻烦。
+**Spring DI** 注入的时候可以很轻松的注入普通变量，也可以通过嵌套注入对象，但嵌套的对象的属性还是普通变量。假如我们要注入一个 *Date* 类型就会比较麻烦。
 
-```
+```java
     public class UserManger {
         private Date dataValue;
 
@@ -33,7 +33,8 @@ photo: http://oyo2a85eo.bkt.clouddn.com//post/notes
     }
 ```
 在配置文件中对日期属性进行注入：
-```
+
+```xml
     <bean id="userManger" class="spring.entity.UserManger">
         <property name="dataValue">
             <value>2018-07-25</value>
@@ -41,7 +42,8 @@ photo: http://oyo2a85eo.bkt.clouddn.com//post/notes
     </bean>
 ```
 测试代码：
-```
+
+```Java
     @Test
     public void testData() {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-web-context.xml");
@@ -51,7 +53,8 @@ photo: http://oyo2a85eo.bkt.clouddn.com//post/notes
 ```
 
 如果按照我们常规这样使用，程序就会报错，因为UserManager中的dataValue属性是 *Date* 类型，而在XML配置中却是 *String* 类型。
-```
+
+```log
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userManger' defined in class path resource [spring-web-context.xml]:
 Initialization of bean failed; nested exception is org.springframework.beans.ConversionNotSupportedException: Failed to convert
 property value of type 'java.lang.String' to required type 'java.util.Date' for property 'dataValue'; nested exception is java.lang.IllegalStateException: Cannot
@@ -71,7 +74,8 @@ convert value of type [java.lang.String] to required type [java.util.Date] for p
 使用自定义属性编辑器，通过继承 **ProPetyEdiTorSupport** ,重写 **setAsText** 方法，具体步骤如下。
 
 ##### 编写自定义的属性编辑器
-```
+
+```Java
     public class DateProPertyEditor extends PropertyEditorSupport {
         private String format = "yyyy-MM-dd";
 
@@ -94,7 +98,8 @@ convert value of type [java.lang.String] to required type [java.util.Date] for p
 ```
 
 ##### 将自定义的属性编辑器注册到Spring中
-```
+
+```Xml
     <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
         <property name="customEditors">
             <map>
@@ -106,7 +111,8 @@ convert value of type [java.lang.String] to required type [java.util.Date] for p
 ```
 
 输出结果：
-```
+
+```log
 log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
@@ -119,7 +125,8 @@ UserManger{dataValue=Wed Jul 25 00:00:00 CST 2018}
 #### 注册Spring自带的属性编辑器CustomDateEditor
 
 ##### 定义属性编辑器
-```
+
+```Java
     public class DatePropertyEditorRegistrar implements PropertyEditorRegistrar {
         @Override
         public void registerCustomEditors(PropertyEditorRegistry registry) {
@@ -128,7 +135,8 @@ UserManger{dataValue=Wed Jul 25 00:00:00 CST 2018}
     }
 ```
 ###### 注册到Spring中
-```
+
+```Xml
     <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
         <property name="propertyEditorRegistrars">
             <list>

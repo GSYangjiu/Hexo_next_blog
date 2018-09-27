@@ -22,7 +22,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com/banner/coke.jpg
 
   第二种方式需要通过在pom.xml文件中添加下面代码，添加Maven依赖。
 
-```
+```xml
   <dependency>
     <groupId>cn.jpush.api</groupId>
     <artifactId>jpush-client</artifactId>
@@ -33,7 +33,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com/banner/coke.jpg
 
 ### 极光推送Demo
 
-```
+```java
 package com.mg.open.common;
 
 import cn.jpush.api.JPushClient;
@@ -155,7 +155,7 @@ public class JPush {
 《Effective Java》中，通过静态内部类Builder和隐式构造函数避免了当变量较多是使用重载构造器的繁琐，而且当这些参数中包含必选和可选的时候，重载构造器可能就要排列组合了，想想就觉得滑稽，手动滑稽。使用get/set又可能会是Bean在构造过程中处于几个状态，而且get/set那么low的写法怎么会有Builde模式的代码看起来简洁优雅。
 
 示例代码：
-```
+```java
 public class NutritionFact3
 {
     //均是final，不可变

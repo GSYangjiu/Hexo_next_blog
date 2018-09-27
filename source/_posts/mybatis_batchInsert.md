@@ -16,7 +16,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com/banner/shenzhen.jpg
 ### 插入的三种方式
 #### 普通insert
 
-```
+```xml
 <insert id="insert" parameterType="CoffeeDateMessage" useGeneratedKeys="true" keyProperty="id">
         insert into m_coffee_date_message(
         coffee_date_id,
@@ -43,7 +43,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com/banner/shenzhen.jpg
 ```
 #### 使用jdbc批量插入
 
-```
+```java
 Connection conn;
 try {
     Class.forName("com.mysql.jdbc.Driver");
@@ -67,7 +67,7 @@ try {
 ```
 #### mybatis批量插入
 
-```
+```xml
 <insert id="batchInsertList" parameterType="java.util.List">
         insert into m_coffee_date_message
         (

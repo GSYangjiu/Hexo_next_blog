@@ -14,7 +14,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com/banner/Sunset.jpg
 ### @Value注入普通变量
 
 直接使用@value注入
-```
+```java
     private @Value("#{config_muguang['app_key']}") String MASTER_SECRET;
     private @Value("#{config_muguang['master_secret']}") String APP_KEY;
 ```
@@ -22,7 +22,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com/banner/Sunset.jpg
 #### @Value注入静态变量
 
 注入**静态变量**的时候要给set方法注入
-```
+```java
     private static String MASTER_SECRET;
     private static String APP_KEY;
 
@@ -44,7 +44,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com/banner/Sunset.jpg
 >2、给参数注入，执行set方法
 >3、通过中间变量赋值
 
-```
+```java
     public static String zhifuUrl;
     @Value("${zhifu.url}")
     private String zhifuUrlTmp;
@@ -60,14 +60,14 @@ photo: http://oyo2a85eo.bkt.clouddn.com/banner/Sunset.jpg
 
 ## @Value #和$
 先直接来看看使用方法
-```
+```java
     @Value("${historyConf}")
     @Value("#{config_weixin['api_key']}")
 ```
 
 ### #
 #### 方法一
-```
+```java
     <bean id="config_weixin" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
     <property name="locations">
         <list>
@@ -78,7 +78,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com/banner/Sunset.jpg
 ```
 
 #### 方法二
-```
+```xml
     <util:properties id="config_weixin" location="classpath:weixin.properties" />
 ```
 两种方式等价，都是通过在Spring配置文件中构建一个bean指向properties配置文件，使用时
@@ -86,7 +86,7 @@ photo: http://oyo2a85eo.bkt.clouddn.com/banner/Sunset.jpg
 
 ### $
 在#使用方法的基础上加上：
-```
+```xml
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
         <property name="properties" ref="config_weixin"/>
     </bean>

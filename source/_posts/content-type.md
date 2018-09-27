@@ -32,30 +32,30 @@ title=test&content=%B3%AC%BC%B6%C5%AE%C9%FA&submit=post+article
 
 当请求头中Content-Type为application/json时，后台controller中添加注解@RequestBody，将请求数据注入到一个String字符串中，把字符串转换成Json对象，在解析这个Json对象根据约定的API文档中的参数名获取传输数据。
 例：
-```
-@ResponseBody
-@RequestMapping("/toMyInfoStep6.do")
-public Message toMyInfoStep6(@RequestBody String paramsJson) throws IOException {
- Message msg = null;
- try {
-     JSONObject JO = JSON.parseObject(paramsJson);
-     String token = (String) JO.get("token");
-     UserInfo myInfo = userInfoService.getUserByToken(token);
-     if (myInfo.getStatus() == 0) {
-         msg = new Message(MessageType.M11209);
-         return msg;
+```java
+    @ResponseBody
+    @RequestMapping("/toMyInfoStep6.do")
+    public Message toMyInfoStep6(@RequestBody String paramsJson) throws IOException {
+     Message msg = null;
+     try {
+         JSONObject JO = JSON.parseObject(paramsJson);
+         String token = (String) JO.get("token");
+         UserInfo myInfo = userInfoService.getUserByToken(token);
+         if (myInfo.getStatus() == 0) {
+             msg = new Message(MessageType.M11209);
+             return msg;
+         }
+         msg = new Message();
+         Map<String, Object> map = new HashMap<>();
+         map.put("myInfo", myInfo);
+         map.put("confirm", userInfoService.getUserCertInfoById(myInfo.getId()));
+         msg.setMap(map);
+     } catch (Exception e) {
+         logger.error("APP UserInfoController toMyInfoStep6 method error", e);
+         msg = new Message(MessageType.M10001);
      }
-     msg = new Message();
-     Map<String, Object> map = new HashMap<>();
-     map.put("myInfo", myInfo);
-     map.put("confirm", userInfoService.getUserCertInfoById(myInfo.getId()));
-     msg.setMap(map);
- } catch (Exception e) {
-     logger.error("APP UserInfoController toMyInfoStep6 method error", e);
-     msg = new Message(MessageType.M10001);
- }
- return msg;
-}
+     return msg;
+    }
 ```
 
 >2、multipart/form-data
