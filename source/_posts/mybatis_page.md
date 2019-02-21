@@ -3,7 +3,7 @@ title: Mybatis+Spring 插件分页
 date: 2018/01/05 11:46:25
 tags: [深圳,Mybatis,Spring,后端]
 categories: document
-photo: http://oyo2a85eo.bkt.clouddn.com//banner/%E6%B7%B1%E5%9C%B3%E6%B9%BE.jpg
+photo: https://s2.ax1x.com/2019/02/21/kRgyvj.jpg
 ---
 
 <center>_Mybatis分页插件详解..._</center>

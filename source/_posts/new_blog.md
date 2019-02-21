@@ -3,7 +3,7 @@ title: New Blog
 date: 2017/11/24 19:35:00
 tags: [深圳,Blog,生活]
 categories: post
-photo: http://oyo2a85eo.bkt.clouddn.com//post/newblog/yangblog_4%20.png
+photo: https://s2.ax1x.com/2019/02/21/kRgUbt.png
 ---
 
 <center>_不折腾不罢休..._</center>
@@ -44,6 +44,6 @@ Blog的图找不到了，引用下大佬的界面吧。
 
 YangBlog4.0如下：
 
-<img id="YangBlog4" src="http://oyo2a85eo.bkt.clouddn.com//post/newblog/yangblog_4%20.png">
+<img id="YangBlog4" src="https://s2.ax1x.com/2019/02/21/kRgUbt.png">
 
 颜色确实很斑驳，背景给了最爱的Vincent，最后一份画作 *《麦田群鸦》* ，亮黄色的麦田和蓝黑色的天空，两种颜色在远处，衔接，交织，碰撞，映射精神和现实两者间的冲击，不可调和的矛盾，通过粗狂的笔触，我们可以想象到Vincent在他生命最后的一段时光，是怎样一笔笔把颜料抠到画布上。那是一个怎样扭曲的灵魂。<br>

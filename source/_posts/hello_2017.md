@@ -3,7 +3,7 @@ title: "Hello World, Hello Blog"
 date: 2017/7/09 20:46:25
 tags: [深圳,生活]
 categories: post
-photo: http://oyo2a85eo.bkt.clouddn.com/banner/coke.jpg
+photo: https://s2.ax1x.com/2019/02/21/kRgdVP.jpg
 ---
 
 <center>_想来生活无非是痛苦和美丽..._</center>

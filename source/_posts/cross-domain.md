@@ -3,7 +3,7 @@ title: 跨域与解决方案
 date: 2018/9/27 12:02:00
 tags: [武汉,Web,前端]
 categories: document
-photo: http://oyo2a85eo.bkt.clouddn.com/cloudyday.jpg
+photo: https://s2.ax1x.com/2019/02/21/kRgGgH.jpg
 ---
 
 <center>_跨向全栈..._</center>

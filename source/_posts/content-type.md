@@ -3,7 +3,7 @@ title: Content-Type和@RequestBody
 date: 2017/10/15 21:36:25
 tags: [深圳,SpringMVC,后端]
 categories: document
-photo: http://oyo2a85eo.bkt.clouddn.com/banner/dusk.jpg
+photo: http://oyo2a85eo.bkt.clouddn.com/banner/dameisha.jpg
 ---
 
 <center>_一点点失去..._</center>

@@ -3,7 +3,7 @@ title: Notes
 date: 2018/7/13 10:02:00
 tags: [武汉,笔记]
 categories: document
-photo: http://oyo2a85eo.bkt.clouddn.com//post/notes
+photo: https://s2.ax1x.com/2019/02/21/kRg058.jpg
 ---
 
 <center>_笔记..._</center>

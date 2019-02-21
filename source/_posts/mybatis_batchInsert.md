@@ -3,7 +3,7 @@ title: Mybatis批量插入
 date: 2017/12/19 16:46:25
 tags: [深圳,Mybatis,后端]
 categories: document
-photo: http://oyo2a85eo.bkt.clouddn.com/banner/shenzhen.jpg
+photo: https://s2.ax1x.com/2019/02/21/kRgDPS.jpg
 ---
 
 <center>_插插插..._</center>

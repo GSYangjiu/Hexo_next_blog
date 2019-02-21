@@ -3,11 +3,13 @@ title: 泛型extends和super
 date: 2018/10/12 15:42:00
 tags: [武汉,Java]
 categories: document
-photo: http://oyo2a85eo.bkt.clouddn.com/cloudyday.jpg
+photo: https://s2.ax1x.com/2019/02/21/kRgr8g.jpg
 ---
 
 <center>_困扰了很久的问题_</center>
 <!-- more -->
+
+秉承着做一个真诚的人的原则，在文章开头我要声明，这篇文章大部分内容都是copy的，因为大牛们已经讲得十分详细，锦上添花的空间都没有了。参考链接会放在文末。
 
 ### 前景
 不带继承的泛型使用很简单，基本上熟悉了Java多态就能很轻松的使用，但是日常中阅读源码时经常会碰到具有继承关系的泛型使用，**extends** 和 **super** ，例如Collections中的copy方法
@@ -143,4 +145,64 @@ IntellIj会检测到编译时异常，通常我们会觉得，plate是个装水�
 当时用 **<? super T>** 时，编译器会知道Plate中的元素一定是Fruit或Fruit的基类，而Apple是Fruit的子类，所以可以向Plate中添加Apple，但取的时候不能确定取出来究竟是Fruit的哪个父类，只能用所有对象的父类Object来接收，元素的类型信息就会丢失。
 
 ### PECS (Producer Extends Consumer Super)
-究竟什么时候用extends什么时候用super呢？《Effective Java》给出了答案：
+究竟什么时候用extends什么时候用super呢？《Effective Java》给出了答案：    
+
+例如，一个简单的Stack API：  
+
+```java
+    public class  Stack<E>{
+        public Stack();
+        public void push(E e):
+        public E pop();
+        public boolean isEmpty();
+    }
+```
+
+要实现pushAll(Iterable<E> src)方法，将src的元素逐一入栈：
+
+```java
+    public void pushAll(Iterable<E> src){
+        for(E e : src)
+            push(e)
+    }
+```
+
+假设有一个实例化Stack<Number>的对象stack，src有Iterable<Integer>与 Iterable<Float>；在调用pushAll方法时会发生type mismatch错误，因为Java中泛型是不可变的，Iterable<Integer>与 Iterable<Float>都不是Iterable<Number>的子类型。因此，应改为：
+
+```java
+    public void pushAll(Iterable<? extends E> src) {
+        for (E e : src)
+            push(e);
+    }
+```
+
+要实现popAll(Collection<E> dst)方法，将Stack中的元素依次取出add到dst中，如果不用通配符实现：
+
+```java
+    public void popAll(Collection<E> dst) {
+        while (!isEmpty())
+            dst.add(pop());   
+    }
+```
+
+同样地，假设有一个实例化Stack<Number>的对象stack，dst为Collection<Object>；调用popAll方法是会发生type mismatch错误，因为Collection<Object>不是Collection<Number>的子类型。因而，应改为：
+
+```java
+    public void popAll(Collection<? super E> dst) {
+    while (!isEmpty())
+        dst.add(pop());
+    }
+```
+
+在上述例子中，在调用pushAll方法时生产了E 实例（produces E instances），在调用popAll方法时dst消费了E 实例（consumes E instances）。Naftalin与Wadler将PECS称为Get and Put Principle。
+
+再回到文章开头java.util.Collections的copy方法，**List<? extends T> src** 生产了T实例 **List<? super T> dest** 消费了T实例，总结一下就是：
+
+> 要从泛型类取数据时，用extends；   
+> 要往泛型类写数据时，用super；   
+> 既要取又要写，就不用通配符（即extends与super都不用）。
+
+### 参考博文
+【1】Treant [Java中的逆变与协变](http://www.cnblogs.com/en-heng/)    
+【2】Mr.Seven [Java泛型中 extends 和 super 的区别？](https://itimetraveler.github.io/2016/12/27/%E3%80%90Java%E3%80%91%E6%B3%9B%E5%9E%8B%E4%B8%AD%20extends%20%E5%92%8C%20super%20%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F/)   
+【3】yi_afly [Java泛型的实现：原理与问题](https://blog.csdn.net/yi_afly/article/details/52002594)

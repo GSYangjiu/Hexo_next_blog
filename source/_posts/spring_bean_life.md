@@ -47,7 +47,7 @@ Bean的完整生命周期经历了各种方法调用，这些方法可以划分�
 
 调用Bean自身的方法和Bean级生命周期接口方法，为了方便演示，它实现了BeanNameAware、BeanFactoryAware、InitializingBean和DiposableBean这4个接口，同时有2个方法，对应配置文件中<bean>的init-method和destroy-method。如下：
 
-```
+```java
 package springBeanTest;
 
 import org.springframework.beans.BeansException;
@@ -148,7 +148,7 @@ public class Person implements BeanFactoryAware, BeanNameAware,
 ```
 
 ##### 2、BeanPostProcessor接口的方法
-```
+```java
 package springBeanTest;
 
 import org.springframework.beans.BeansException;
@@ -186,7 +186,7 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
 InstantiationAwareBeanPostProcessor接口本质是BeanPostProcessor的子接口，一般我们继承Spring为其提供的适配器类InstantiationAwareBeanPostProcessor Adapter来使用它，如下：
 复制代码
 
-```
+```java
 package springBeanTest;
 
 import java.beans.PropertyDescriptor;
@@ -237,7 +237,7 @@ public class MyInstantiationAwareBeanPostProcessor extends
 这个有3个方法，其中第二个方法postProcessAfterInitialization就是重写了BeanPostProcessor的方法。第三个方法postProcessPropertyValues用来操作属性，返回值也应该是PropertyValues对象。
 
 ##### 4、工厂后处理器接口方法
-```
+```java
 package springBeanTest;
 
 import org.springframework.beans.BeansException;
@@ -266,7 +266,7 @@ public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 ##### 5、配置beans.xml文件
 很简单，使用ApplicationContext,处理器不用手动注册
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -293,7 +293,7 @@ public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 ```
 
 ##### 6、测试
-```
+```java
 package springBeanTest;
 
 import org.springframework.context.ApplicationContext;
@@ -320,7 +320,7 @@ public class BeanLifeCycle {
 关闭容器使用的是实际是AbstractApplicationContext的钩子方法。
 
 ##### 7、结果
-```
+```java
 现在开始初始化容器
 2014-5-18 15:46:20 org.springframework.context.support.AbstractApplicationContext prepareRefresh
 信息: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19a0c7c: startup date [Sun May 18 15:46:20 CST 2014]; root of context hierarchy

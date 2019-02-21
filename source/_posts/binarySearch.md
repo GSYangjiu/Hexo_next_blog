@@ -3,7 +3,7 @@ title: 二分查找
 date: 2018/10/9 15:52:00
 tags: [武汉,算法]
 categories: document
-photo: http://oyo2a85eo.bkt.clouddn.com/cloudyday.jpg
+photo: https://s2.ax1x.com/2019/02/21/kRgxPO.png
 ---
 
 <center>_即使最简单的算法也有很多的细节_</center>

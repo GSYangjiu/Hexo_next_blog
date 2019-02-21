@@ -3,7 +3,7 @@ title: 摘录
 date: 2018/7/25 12:37:00
 tags: [武汉,读书,生活]
 categories: reading
-photo: http://oyo2a85eo.bkt.clouddn.com//post/notes
+photo: https://s2.ax1x.com/2019/02/21/kRRVmR.jpg
 ---
 
 <center>_士大夫三日不读书,则义理不交于胸中,对镜觉面目可憎,向人亦语言无味。_</center>

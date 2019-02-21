@@ -3,7 +3,7 @@ title: JavaScript ES6中export及export default的区别
 date: 2018/6/13 15:02:00
 tags: [武汉,ES6,前端]
 categories: document
-photo: http://oyo2a85eo.bkt.clouddn.com/%E4%B8%AD%E5%8D%97%E8%B4%A2%E7%BB%8F_%E6%99%9A%E9%9C%9E
+photo: https://s2.ax1x.com/2019/02/21/kRgtKA.jpg
 ---
 
 <center>最近开始学习 **Vue** ，接触到了很多 **ES6** 的语法</center>

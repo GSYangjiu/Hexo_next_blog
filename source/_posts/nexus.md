@@ -3,7 +3,7 @@ title: 搭建Nexus Maven私服
 date: 2018/1/30 20:46:25
 tags: [Linux,Maven,后端]
 categories: document
-photo: http://oyo2a85eo.bkt.clouddn.com//post/nexus/maven.png
+photo: https://s2.ax1x.com/2019/02/21/kRgNDI.png
 ---
 <center>_做web开发的对Maven肯定不会陌生..._</center>
 <!-- more -->
