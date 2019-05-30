@@ -928,8 +928,8 @@ vendors:
   ua_parser:
 
   # Internal version: 4.6.2
-  # See: http://fontawesome.io/
-  fontawesome: https://use.fontawesome.com/6b2998c39a.js
+  # See: http://fontawesome.io/ https://use.fontawesome.com/releases/v5.8.2/css/all.css
+  fontawesome:
 
   # Internal version: 1
   # https://www.algolia.com
